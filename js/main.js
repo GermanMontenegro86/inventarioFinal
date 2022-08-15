@@ -59,14 +59,12 @@ function ingresarNuevoProducto() {
 
         const nuevoProducto = new Producto(nombre,precio, stock, vencimiento);
         productos.push(nuevoProducto);
-       
 
         confirmar = confirm("desea cargar datos");
 
     }
 
     for (Producto of productos) {
-
         Producto.mostrarProducto();
         Producto.mostrarPrecio();
         Producto.mostrarStock();
@@ -97,6 +95,5 @@ function buscarStock() {
 //   imprimir todo los productos
 
 function  ImprimirTodo(){
-    let imprimirTodo=productos.slice();
-    console.log(imprimirTodo);
+    productos.forEach(element => console.log(element));
 }
