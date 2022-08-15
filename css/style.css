@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background-image: url("https://media.istockphoto.com/vectors/abstract-orange-vector-background-with-stripes-can-be-used-for-cover-vector-id1156933854?k=20&m=1156933854&s=612x612&w=0&h=fxlp-ZvxJUfVtmOUr97qTz_7PDOgm5OfZO_od9BOLrw=");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo {
+    background: linear-gradient(90deg, rgba(20, 20, 20, 1) 0%, rgba(14, 14, 14, 0.8687850140056023) 50%, rgba(25, 25, 24, 1) 100%);
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 2em;
+}
+
+.titulo h1 {
+    color: white;
+}
+
+.botones button {
+    font-size: 1em;
+    background-color: antiquewhite;
+    border-radius: 9px;
+    font-family: cursive;
+    color: #ac13c8
+}
+
+.productos h2 {
+    font-size: 18px;
+}
+
+.productos {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "Producto Precio Stock Vencimiento";
+}
+
+.Producto {
+    grid-area: Producto;
+}
+
+.Precio {
+    grid-area: Precio;
+}
+
+.Stock {
+    grid-area: Stock;
+}
+
+.Vencimiento {
+    grid-area: Vencimiento;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.Producto,
+.Precio,
+.Stock,
+.Vencimiento {
+    text-align: center;
+    color: blue;
+}
+
+.productos li{
+    color: crimson;
+    list-style: none;
+    font-size: 1.5em;
+    background-color: #00ffff80;
+
+}
+/* 
+.Producto li {
+    color: crimson;
+    list-style: none;
+    font-size: 2em;
+    background-color: #00ffff80;
+
+}
+
+.Precio li {
+    color: crimson;
+    list-style: none;
+    font-size: 2em;
+    background-color: #00ffff80;
+} */
