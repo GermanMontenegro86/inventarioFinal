@@ -24,7 +24,6 @@
     font-size: 1em;
     background-color: antiquewhite;
     border-radius: 9px;
-    font-family: cursive;
     color: #ac13c8
 }
 
@@ -76,7 +75,7 @@
 .productos li{
     color: crimson;
     list-style: none;
-    font-size: 1.5em;
+    font-size: 1em;
     background-color: #00ffff80;
 
 }
